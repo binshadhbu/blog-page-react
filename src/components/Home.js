@@ -41,4 +41,10 @@ const mapStateToProps = (state) => {
   };
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deletePost:(id)=>{dispatch({type:'DELETE_POST',id:id})}
+  }
+}
+
 export default connect(mapStateToProps)(Home);
